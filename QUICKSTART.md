@@ -1,5 +1,8 @@
 # Быстрый старт
 
+⚠️ **ВАЖНО для Python 3.13**: Если у вас Python 3.13, сначала обновите pip: `pip install --upgrade pip`
+Если возникнут проблемы, смотрите [INSTALLATION.md](INSTALLATION.md)
+
 ## 1️⃣ Скачивание репозитория
 
 ```bash
@@ -27,6 +30,9 @@ source venv/bin/activate
 # На Windows:
 # venv\Scripts\activate
 
+# Обновить pip (ВАЖНО для Python 3.13!)
+pip install --upgrade pip
+
 # Установить зависимости
 pip install -r requirements.txt
 ```
@@ -34,7 +40,10 @@ pip install -r requirements.txt
 ### Вариант 2: Без виртуального окружения
 
 ```bash
-# Просто установить зависимости
+# Обновить pip
+pip install --upgrade pip
+
+# Установить зависимости
 pip install -r requirements.txt
 ```
 
@@ -215,6 +224,7 @@ graphs/
 git clone https://github.com/AlexRokalo/stockcheker.git && \
 cd stockcheker && \
 git checkout claude/stock-analysis-system-011CUoN1uYS43Aa955UYDVJf && \
+pip install --upgrade pip && \
 pip install -r requirements.txt && \
 python main.py --ticker AAPL
 ```
